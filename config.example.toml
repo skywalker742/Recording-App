@@ -1,0 +1,33 @@
+# Class Notes Recorder settings.
+# The app copies this file to config.toml the first time it runs.
+# Edit config.toml (not this file) to change your settings.
+
+# The classes you can pick from when you start a recording.
+classes = ["Class 1", "Class 2"]
+
+# Where recordings, transcripts, and notes are saved.
+data_folder = "~/Documents/Class Notes"
+
+# Which microphone to record from. "default" uses your system's default mic.
+microphone = "default"
+
+# Audio is saved in pieces this many minutes long, so a crash loses very little.
+chunk_minutes = 5
+
+# Recording stops on its own after this many hours.
+max_recording_hours = 4
+
+# Speech-to-text model that runs on your computer.
+whisper_model = "base.en"
+
+# Claude model used to write your notes.
+claude_model = "claude-sonnet-5-5"
+
+# Start transcribing automatically when recording stops.
+auto_transcribe = true
+
+# Write notes automatically when the transcript is ready.
+auto_notes = true
+
+# Delete audio files this many days after recording (transcripts and notes are kept).
+delete_audio_after_days = 30

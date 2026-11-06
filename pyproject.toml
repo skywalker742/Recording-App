@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "class-notes-recorder"
+version = "0.1.0"
+description = "Records class audio, transcribes it on your computer, and turns it into organized notes."
+readme = "README.md"
+requires-python = ">=3.11"
+# Runtime libraries are added phase by phase as each feature is built.
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=9.2"]
+
+[project.scripts]
+class-notes = "class_notes.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

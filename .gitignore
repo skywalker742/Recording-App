@@ -1,0 +1,20 @@
+# Python / tooling
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+build/
+dist/
+
+# Personal settings and data: never commit these
+config.toml
+*.flac
+*.wav
+transcript.txt
+transcript.json
+notes.md
+sessions.db
+*.log
+.env
